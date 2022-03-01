@@ -39,6 +39,21 @@ public class GameTest {
         Assertions.assertEquals(expected, actual);
     }
 
+    @Test
+    public void getterTest() {
+        Game game = new Game(false);
+        boolean expected = false;
+        boolean actual = game.getIsGreenLight();
+        Assertions.assertEquals(expected, actual);
+    }
 
+    @Test
+    public void setterTest() {
+        Game game = new Game(false);
+        game.setIsGreenLight(true);
+        boolean expected = true;
+        boolean actual = game.getIsGreenLight();
+        Assertions.assertEquals(expected, actual);
+    }
 }
 
